@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-02T23:36:21 IST" name="Default suite" finished-at="2026-06-02T23:36:29 IST" duration-ms="8645">
+    <groups>
+    </groups>
+    <test started-at="2026-06-02T23:36:21 IST" name="Default test" finished-at="2026-06-02T23:36:29 IST" duration-ms="8645">
+      <class name="Day1.Authentication">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Day1.Authentication@1eb6749b]" started-at="2026-06-02T23:36:21 IST" name="setup" finished-at="2026-06-02T23:36:21 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="BasicAuth1()[pri:0, instance:Day1.Authentication@1eb6749b]" started-at="2026-06-02T23:36:21 IST" name="BasicAuth1" finished-at="2026-06-02T23:36:26 IST" duration-ms="5298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BasicAuth1 -->
+        <test-method signature="BasicAuth2()[pri:0, instance:Day1.Authentication@1eb6749b]" started-at="2026-06-02T23:36:26 IST" name="BasicAuth2" finished-at="2026-06-02T23:36:28 IST" duration-ms="1758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BasicAuth2 -->
+        <test-method signature="BearerAuth()[pri:0, instance:Day1.Authentication@1eb6749b]" started-at="2026-06-02T23:36:28 IST" name="BearerAuth" finished-at="2026-06-02T23:36:29 IST" duration-ms="1500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BearerAuth -->
+      </class> <!-- Day1.Authentication -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
