@@ -59,4 +59,81 @@ public class Authentication {
 			.statusCode(200);
 			
 		}
+		/* Authentication using API key
+		 * The API Key is an unique value provided by API Provider
+		 * Server identify value and authorize the client to make request
+		 * 1. With Header
+		 * 2. With query param
+		 */
+		@Test
+		public void APIKey() {
+			request.given()
+			.header("X-API-Key", "my-secret-api-key")
+			.when()
+			.get("/headers")
+			.then()
+			.statusCode(200)
+			.body("headers.Host", equalTo("httpbin.org"));
+		}
+		@Test
+		public void APIKeyWithQueryParam() {
+			request.given()
+			.queryParam("api-key", "12345-abcde-67890")
+			.when()
+			.get("/get")
+			.then()
+			.statusCode(200)
+			.body("args.api-key", equalTo("12345-abcde-67890"));
+		}
+		
+	/* Query Parameter is a data that we sent in URL after ?    Like above eg https://httpbin.org/get?api_key=12345-abcde-67890
+	 * Response received from the server will reflect in args
+	 * Query Parameter is mainly used for Filtering and Searching 
+	 * 
+	 * As Header mainly use for Authentication and Authorization as it sent separately or apart from URL
+	 * For Authentication and Authorization sometimes we can go for query parameter but its unsafe as it appears in browser history so instead use Bearer token
+	 * 
+	 * Query Parameter Vs Path Parameter - Both are sent in / within URL
+	 * Query Parameter - Optional Information
+	 * Path Parameter - Its a part of resource path
+	 * eg - 
+	 * given()
+        .pathParam("id", 101)
+        .when()
+        .get("/users/{id}");
+        
+        URL - /users/101
+	 */
+		
+		
+	/* Digest authentication
+	 * Digest Authentication is an authentication method that improves on Basic Authentication by not sending the password directly over the network.
+	 * Basic Authentication uses Base64 which only encode but not encrypt
+	 * 
+	 * In this client internally create hash response after server challenge the first request when client again send request with created hash server is then
+	 * performs the same hash calculation if match then we get 200 OK 
+	 * 
+	 * Commonly used in legacy system	
+	 */
+	@Test
+	public void DigestAuthentication() {
+		request.given()
+		.auth().digest("user", "passwd")
+		.when()
+		.get("/digest-auth/auth/user/passwd")
+		.then()
+		.statusCode(200)
+		.body("authenticated", equalTo(true))
+		.body("user", equalTo("user"));
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 }

@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-02T23:36:21 IST" name="Default suite" finished-at="2026-06-02T23:36:29 IST" duration-ms="8645">
+  <suite started-at="2026-06-03T23:28:20 IST" name="Default suite" finished-at="2026-06-03T23:28:31 IST" duration-ms="10272">
     <groups>
     </groups>
-    <test started-at="2026-06-02T23:36:21 IST" name="Default test" finished-at="2026-06-02T23:36:29 IST" duration-ms="8645">
+    <test started-at="2026-06-03T23:28:20 IST" name="Default test" finished-at="2026-06-03T23:28:31 IST" duration-ms="10272">
       <class name="Day1.Authentication">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Day1.Authentication@1eb6749b]" started-at="2026-06-02T23:36:21 IST" name="setup" finished-at="2026-06-02T23:36:21 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Day1.Authentication@71b3bc45]" started-at="2026-06-03T23:28:20 IST" name="setup" finished-at="2026-06-03T23:28:20 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="BasicAuth1()[pri:0, instance:Day1.Authentication@1eb6749b]" started-at="2026-06-02T23:36:21 IST" name="BasicAuth1" finished-at="2026-06-02T23:36:26 IST" duration-ms="5298" status="PASS">
+        <test-method signature="APIKey()[pri:0, instance:Day1.Authentication@71b3bc45]" started-at="2026-06-03T23:28:20 IST" name="APIKey" finished-at="2026-06-03T23:28:23 IST" duration-ms="2970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIKey -->
+        <test-method signature="APIKeyWithQueryParam()[pri:0, instance:Day1.Authentication@71b3bc45]" started-at="2026-06-03T23:28:23 IST" name="APIKeyWithQueryParam" finished-at="2026-06-03T23:28:25 IST" duration-ms="1303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIKeyWithQueryParam -->
+        <test-method signature="BasicAuth1()[pri:0, instance:Day1.Authentication@71b3bc45]" started-at="2026-06-03T23:28:25 IST" name="BasicAuth1" finished-at="2026-06-03T23:28:26 IST" duration-ms="1655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasicAuth1 -->
-        <test-method signature="BasicAuth2()[pri:0, instance:Day1.Authentication@1eb6749b]" started-at="2026-06-02T23:36:26 IST" name="BasicAuth2" finished-at="2026-06-02T23:36:28 IST" duration-ms="1758" status="PASS">
+        <test-method signature="BasicAuth2()[pri:0, instance:Day1.Authentication@71b3bc45]" started-at="2026-06-03T23:28:26 IST" name="BasicAuth2" finished-at="2026-06-03T23:28:28 IST" duration-ms="1504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasicAuth2 -->
-        <test-method signature="BearerAuth()[pri:0, instance:Day1.Authentication@1eb6749b]" started-at="2026-06-02T23:36:28 IST" name="BearerAuth" finished-at="2026-06-02T23:36:29 IST" duration-ms="1500" status="PASS">
+        <test-method signature="BearerAuth()[pri:0, instance:Day1.Authentication@71b3bc45]" started-at="2026-06-03T23:28:28 IST" name="BearerAuth" finished-at="2026-06-03T23:28:29 IST" duration-ms="1259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BearerAuth -->
+        <test-method signature="DigestAuthentication()[pri:0, instance:Day1.Authentication@71b3bc45]" started-at="2026-06-03T23:28:29 IST" name="DigestAuthentication" finished-at="2026-06-03T23:28:31 IST" duration-ms="1527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DigestAuthentication -->
       </class> <!-- Day1.Authentication -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

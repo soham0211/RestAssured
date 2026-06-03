@@ -6,7 +6,7 @@
       <class name="Day1.Authentication">
         <methods>
           <include name="setup"/>
-          <include name="BearerAuth"/>
+          <include name="APIKey"/>
         </methods>
       </class> <!-- Day1.Authentication -->
     </classes>
