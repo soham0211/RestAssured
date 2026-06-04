@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\SOHAM\AppData\Local\Temp\testng-eclipse-316148138\testng-customsuite.xml</span>
+                    <span>C:\Users\SOHAM\AppData\Local\Temp\testng-eclipse--972958166\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -129,6 +129,21 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="Day1.Authentication" class="method navigator-link" hash-for-method="DigestAuthentication">DigestAuthentication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Day1.Authentication" class="method navigator-link" hash-for-method="NoAuthentication">NoAuthentication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Day1.Authentication" class="method navigator-link" hash-for-method="ReqResRegister">ReqResRegister</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Day1.Authentication" class="method navigator-link" hash-for-method="ReqResRegisterFail">ReqResRegisterFail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -191,12 +206,33 @@
                   <span class="method-name">DigestAuthentication</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NoAuthentication">
+                  </a> <!-- NoAuthentication -->
+                  <span class="method-name">NoAuthentication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReqResRegister">
+                  </a> <!-- ReqResRegister -->
+                  <span class="method-name">ReqResRegister</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReqResRegisterFail">
+                  </a> <!-- ReqResRegisterFail -->
+                  <span class="method-name">ReqResRegisterFail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SOHAM\AppData\Local\Temp\testng-eclipse-316148138\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\SOHAM\AppData\Local\Temp\testng-eclipse--972958166\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -245,36 +281,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'APIKey')
 data.setCell(0, 2, 'Day1.Authentication')
-data.setCell(0, 3, 2970);
+data.setCell(0, 3, 5190);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'BasicAuth1')
 data.setCell(1, 2, 'Day1.Authentication')
-data.setCell(1, 3, 1655);
+data.setCell(1, 3, 2047);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'DigestAuthentication')
+data.setCell(2, 1, 'BasicAuth2')
 data.setCell(2, 2, 'Day1.Authentication')
-data.setCell(2, 3, 1527);
+data.setCell(2, 3, 2006);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'BasicAuth2')
+data.setCell(3, 1, 'DigestAuthentication')
 data.setCell(3, 2, 'Day1.Authentication')
-data.setCell(3, 3, 1504);
+data.setCell(3, 3, 1846);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'APIKeyWithQueryParam')
 data.setCell(4, 2, 'Day1.Authentication')
-data.setCell(4, 3, 1303);
+data.setCell(4, 3, 1639);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'BearerAuth')
 data.setCell(5, 2, 'Day1.Authentication')
-data.setCell(5, 3, 1259);
+data.setCell(5, 3, 1562);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'NoAuthentication')
+data.setCell(6, 2, 'Day1.Authentication')
+data.setCell(6, 3, 1500);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ReqResRegister')
+data.setCell(7, 2, 'Day1.Authentication')
+data.setCell(7, 3, 1002);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ReqResRegisterFail')
+data.setCell(8, 2, 'Day1.Authentication')
+data.setCell(8, 3, 780);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -307,27 +355,39 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">APIKey</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">APIKeyWithQueryParam</span>
-                <span class="method-start">2994 ms</span>
+                <span class="method-start">5233 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BasicAuth1</span>
-                <span class="method-start">4299 ms</span>
+                <span class="method-start">6874 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BasicAuth2</span>
-                <span class="method-start">5954 ms</span>
+                <span class="method-start">8923 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BearerAuth</span>
-                <span class="method-start">7458 ms</span>
+                <span class="method-start">10931 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DigestAuthentication</span>
-                <span class="method-start">8719 ms</span>
+                <span class="method-start">12495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NoAuthentication</span>
+                <span class="method-start">14344 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ReqResRegister</span>
+                <span class="method-start">15845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ReqResRegisterFail</span>
+                <span class="method-start">16850 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

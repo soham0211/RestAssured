@@ -126,8 +126,71 @@ public class Authentication {
 		.body("authenticated", equalTo(true))
 		.body("user", equalTo("user"));
 	}
+	
+	// Here we are checking for Authentification fail scenario by sending Bad request
+	
+	@Test
+	public void NoAuthentication() {
+		request.given()
+		.when()
+		.get("/basic-auth/user/passwd")
+		.then()
+		.statusCode(401);
+	}
+	
+	/*Here we are using Post request by sending or using request body
+	 * Positive scenario to check status code 201 and verifying required response in attribute id
+	 */
+	@Test
+	public void ReqResRegister() {
+		
+		request.baseURI="https://jsonplaceholder.typicode.com";
+		
+		String requestBody = "{\n" +
+	            "  \"userId\": \"1\",\n" +
+	            "  \"title\": \"Hello Soham\", \n" +
+	            "  \"body\": \"Hello Soham\"\n" +
+	            "}";
+		request.given()
+		.contentType("application/json")
+		.body(requestBody)
+		.log().all()
+		.when()
+		.post("/posts")
+		.then()
+		.log().all()
+		.statusCode(201)
+		.body("id", equalTo(101))
+		.body("title", notNullValue())
+		.body("title", equalTo("Hello Soham"));
+	
+	}
+		
+	/*Here we are using Post request by sending or using request body
+	 * Negative scenario to check status code 500
+	 */
+	@Test
+	public void ReqResRegisterFail() {
+		
+		request.baseURI="https://jsonplaceholder.typicode.com";
+		
+		String requestBody = "{\n" +
+	            "  \"userId\": \"1\",\n" +
+	            
+	            "}";
+		request.given()
+		.contentType("application/json")
+		.body(requestBody)
+		.log().all()
+		.when()
+		.post("/posts")
+		.then()
+		.log().all()
+		.statusCode(500);
 		
 		
+	
+	}
 		
 		
 		
