@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-04T23:04:43 IST" name="Default suite" finished-at="2026-06-04T23:05:01 IST" duration-ms="17676">
+  <suite started-at="2026-06-05T23:25:05 IST" name="Default suite" finished-at="2026-06-05T23:25:09 IST" duration-ms="4706">
     <groups>
     </groups>
-    <test started-at="2026-06-04T23:04:43 IST" name="Default test" finished-at="2026-06-04T23:05:01 IST" duration-ms="17676">
-      <class name="Day1.Authentication">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Day1.Authentication@5b7ea70d]" started-at="2026-06-04T23:04:43 IST" name="setup" finished-at="2026-06-04T23:04:43 IST" duration-ms="17" status="PASS">
+    <test started-at="2026-06-05T23:25:05 IST" name="Default test" finished-at="2026-06-05T23:25:09 IST" duration-ms="4706">
+      <class name="Day1.JsonSchemaValidation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Day1.JsonSchemaValidation@62435e70]" started-at="2026-06-05T23:25:05 IST" name="setup" finished-at="2026-06-05T23:25:05 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="APIKey()[pri:0, instance:Day1.Authentication@5b7ea70d]" started-at="2026-06-04T23:04:43 IST" name="APIKey" finished-at="2026-06-04T23:04:49 IST" duration-ms="5190" status="PASS">
+        <test-method signature="ValidateSinglePostSchema()[pri:0, instance:Day1.JsonSchemaValidation@62435e70]" started-at="2026-06-05T23:25:05 IST" name="ValidateSinglePostSchema" finished-at="2026-06-05T23:25:09 IST" duration-ms="3996" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- APIKey -->
-        <test-method signature="APIKeyWithQueryParam()[pri:0, instance:Day1.Authentication@5b7ea70d]" started-at="2026-06-04T23:04:49 IST" name="APIKeyWithQueryParam" finished-at="2026-06-04T23:04:50 IST" duration-ms="1639" status="PASS">
+        </test-method> <!-- ValidateSinglePostSchema -->
+        <test-method signature="ValidateUserSchema()[pri:0, instance:Day1.JsonSchemaValidation@62435e70]" started-at="2026-06-05T23:25:09 IST" name="ValidateUserSchema" finished-at="2026-06-05T23:25:09 IST" duration-ms="628" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- APIKeyWithQueryParam -->
-        <test-method signature="BasicAuth1()[pri:0, instance:Day1.Authentication@5b7ea70d]" started-at="2026-06-04T23:04:50 IST" name="BasicAuth1" finished-at="2026-06-04T23:04:52 IST" duration-ms="2047" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BasicAuth1 -->
-        <test-method signature="BasicAuth2()[pri:0, instance:Day1.Authentication@5b7ea70d]" started-at="2026-06-04T23:04:52 IST" name="BasicAuth2" finished-at="2026-06-04T23:04:54 IST" duration-ms="2006" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BasicAuth2 -->
-        <test-method signature="BearerAuth()[pri:0, instance:Day1.Authentication@5b7ea70d]" started-at="2026-06-04T23:04:54 IST" name="BearerAuth" finished-at="2026-06-04T23:04:56 IST" duration-ms="1562" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BearerAuth -->
-        <test-method signature="DigestAuthentication()[pri:0, instance:Day1.Authentication@5b7ea70d]" started-at="2026-06-04T23:04:56 IST" name="DigestAuthentication" finished-at="2026-06-04T23:04:58 IST" duration-ms="1846" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DigestAuthentication -->
-        <test-method signature="NoAuthentication()[pri:0, instance:Day1.Authentication@5b7ea70d]" started-at="2026-06-04T23:04:58 IST" name="NoAuthentication" finished-at="2026-06-04T23:04:59 IST" duration-ms="1500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NoAuthentication -->
-        <test-method signature="ReqResRegister()[pri:0, instance:Day1.Authentication@5b7ea70d]" started-at="2026-06-04T23:04:59 IST" name="ReqResRegister" finished-at="2026-06-04T23:05:00 IST" duration-ms="1002" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReqResRegister -->
-        <test-method signature="ReqResRegisterFail()[pri:0, instance:Day1.Authentication@5b7ea70d]" started-at="2026-06-04T23:05:00 IST" name="ReqResRegisterFail" finished-at="2026-06-04T23:05:01 IST" duration-ms="780" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReqResRegisterFail -->
-      </class> <!-- Day1.Authentication -->
+        </test-method> <!-- ValidateUserSchema -->
+      </class> <!-- Day1.JsonSchemaValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
