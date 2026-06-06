@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day1.JsonSchemaValidation">
+      <class name="Day1.Parameterization">
         <methods>
-          <include name="ValidateUserSchema"/>
           <include name="setup"/>
+          <include name="userWithDifferentIDS" invocation-numbers="0 1 2 3 4"/>
         </methods>
-      </class> <!-- Day1.JsonSchemaValidation -->
+      </class> <!-- Day1.Parameterization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
